@@ -45,11 +45,11 @@ export default {
         this.rules[0].value === this.rules[1].value
       ) {
         console.log("T");
-        // setTimeout(() => {
-        this.$refs[`card-${this.rules[0].index}`][0].onEnableFligBackCard();
-        this.$refs[`card-${this.rules[1].index}`][0].onEnableFligBackCard();
-        this.rules = [];
-        // }, 800);
+        setTimeout(() => {
+          this.$refs[`card-${this.rules[0].index}`][0].onEnableFligBackCard();
+          this.$refs[`card-${this.rules[1].index}`][0].onEnableFligBackCard();
+          this.rules = [];
+        }, 800);
         const disableEll = document.querySelectorAll(".screen .card.disable");
         if (disableEll && disableEll.length === this.cardContext.length - 2) {
           setTimeout(() => {
