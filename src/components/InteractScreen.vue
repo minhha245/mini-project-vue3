@@ -44,7 +44,7 @@ export default {
         this.rules.length === 2 &&
         this.rules[0].value === this.rules[1].value
       ) {
-        console.log("T");
+        console.log("True");
         setTimeout(() => {
           this.$refs[`card-${this.rules[0].index}`][0].onEnableFligBackCard();
           this.$refs[`card-${this.rules[1].index}`][0].onEnableFligBackCard();
@@ -60,7 +60,7 @@ export default {
         this.rules.length === 2 &&
         this.rules[0].value !== this.rules[1].value
       ) {
-        console.log("f");
+        console.log("Flase");
 
         setTimeout(() => {
           this.$refs[`card-${this.rules[0].index}`][0].onFligBackCard();
